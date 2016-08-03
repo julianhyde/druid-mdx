@@ -60,7 +60,7 @@ public class Main {
       + "";
 
   public static void main(String[] args) {
-    final PrintWriter w = new PrintWriter(System.out);
+    final PrintWriter w = new PrintWriter(System.out, true);
     final String url = "jdbc:calcite:model='inline:" + CALCITE_MODEL + "'";
     final String mondrianModel = getMondrianModel(url, "wiki", "wikiticker", w);
     w.println("Generated Mondrian model:");
